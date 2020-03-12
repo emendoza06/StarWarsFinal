@@ -21,6 +21,12 @@ export default function People({ data }) {
                                     <p>{people.homeworld}</p>
                                     <strong>Films</strong>
                                     <p>{people.films}</p>
+
+
+                                    <button class="button " type="button" onClick={() => alert(JSON.stringify(people, null, 4))}><span>Read More</span></button>       
+                                    
+                                    
+
                                 </Card.Description>
                             </Card.Content>    
                         </Card>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Grid } from 'semantic-ui-react';
+import './components.css';
 
 export default function Movies({ data }) {
     return (
@@ -21,6 +22,8 @@ export default function Movies({ data }) {
                                     <p>{movies.release_date}</p>
                                     <strong>Opening Crawl</strong>
                                     <p>{movies.opening_crawl}</p>
+
+                                    <button class="button " type="button" onClick={() => alert(JSON.stringify(movies, null, 4))}><span>Read More</span></button>       
                                 </Card.Description>
                             </Card.Content>    
                         </Card>

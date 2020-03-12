@@ -21,6 +21,8 @@ export default function Planets({ data }) {
                                     <p>{planets.population}</p>
                                     <strong>Films</strong>
                                     <p>{planets.films}</p>
+
+                                    <button class="button " type="button" onClick={() => alert(JSON.stringify(planets, null, 4))}><span>Read More</span></button>       
                                 </Card.Description>
                             </Card.Content>    
                         </Card>
